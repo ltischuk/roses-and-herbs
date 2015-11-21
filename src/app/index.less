@@ -19,16 +19,34 @@ body {
 
 }
 
+.antique-font {
+
+  font-family: 'caslon-antique', sans-serif;
+  .title{
+
+    font-size:24px;
+
+  }
+  p{
+    font-size:18px;
+  }
+
+}
+
 .main-content{
 
   background: white;
 
 }
 
+/*Main Carousel section*/
 .carousel-container{
 
   margin-left:auto;
   margin-right:auto;
+
+  /*TODO make this a media query*/
+
   width:1000px;
   height:400px;
 
@@ -39,9 +57,13 @@ body {
   background-color: rgba(0,0,0,0);
   overflow: hidden;
   padding:10px;
+
 }
 .carousel-control {
   border-radius: 10px;
+  .left{
+    background-image: linear-gradient(to right, rgba(144, 178, 71, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  }
 }
 
 .carousel-indicators li {
@@ -53,5 +75,21 @@ body {
   background-color: #444;
 }
 
+.carousel-inner .active {
+  .row{
+
+    margin: 30px 78px 78px;
+
+  }
+
+}
+
+.carousel-control.left{
+    background-image: linear-gradient(to right, rgba(16, 56, 19, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+}
+
+.carousel-control.right{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(16, 56, 19, 0.5) 100%);
+}
 // injector
 // endinjector
